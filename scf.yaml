@@ -1,0 +1,15 @@
+name: fastadmin-php
+type: web
+runtime: php
+entry: public/index.php
+env:
+  - name: APP_DEBUG
+    value: true
+  - name: DB_HOST
+    value: ${MYSQL_ADDRESS}
+  - name: DB_DATABASE
+    value: ${MYSQL_DATABASE}
+  - name: DB_USERNAME
+    value: ${MYSQL_USERNAME}
+  - name: DB_PASSWORD
+    value: ${MYSQL_PASSWORD}
